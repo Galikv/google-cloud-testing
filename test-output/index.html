@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-GCloudStorageTests" class="navigator-link">
+              <span class="suite-name border-passed">GCloudStorageTests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-GCloudStorageTests" class="navigator-link ">
+                    <span>C:\Users\Puffy\google-storage-test\src\test\java\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-GCloudStorageTests" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-GCloudStorageTests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-GCloudStorageTests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-GCloudStorageTests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-GCloudStorageTests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-GCloudStorageTests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">26 methods,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GCloudStorageTests" class="hide-methods passed suite-GCloudStorageTests"> (hide)</a> <!-- hide-methods passed suite-GCloudStorageTests -->
+                      <a href="#" panel-name="suite-GCloudStorageTests" class="show-methods passed suite-GCloudStorageTests"> (show)</a> <!-- show-methods passed suite-GCloudStorageTests -->
+                    </span>
+                    <div class="method-list-content passed suite-GCloudStorageTests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyFile(special@file(name).txt, gs://my-gcould-testing-bucket/copied-file3.txt)">testCopyFile(special@file(name).txt, gs://my-gcould-testing-bucket/copied-file3.txt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyFile(local-file.txt, gs://my-gcould-testing-bucket/copied-file1.txt)">testCopyFile(local-file.txt, gs://my-gcould-testing-bucket/copied-file1.txt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyFile(*.txt, gs://my-gcould-testing-bucket/)">testCopyFile(*.txt, gs://my-gcould-testing-bucket/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyFile(large-file.zip, gs://my-gcould-testing-bucket/copied-file2.zip)">testCopyFile(large-file.zip, gs://my-gcould-testing-bucket/copied-file2.zip)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyFile(empty-file.txt, gs://my-gcould-testing-bucket/copied-file4.txt)">testCopyFile(empty-file.txt, gs://my-gcould-testing-bucket/copied-file4.txt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyFromInvalidLocalPath">testCopyFromInvalidLocalPath</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyNonExistentFile">testCopyNonExistentFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.CopyFileTest" class="method navigator-link" hash-for-method="testCopyToInvalidGCSPath">testCopyToInvalidGCSPath</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveFiles([gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-f...)">testRemoveFiles([gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-f...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveFiles([gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt])">testRemoveFiles([gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveFiles([gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/remo...)">testRemoveFiles([gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/remo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveFiles([gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt])">testRemoveFiles([gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveFiles([gs://my-gcould-testing-bucket/removed-empty-file.txt])">testRemoveFiles([gs://my-gcould-testing-bucket/removed-empty-file.txt])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveFilesFromNonExistentBucket">testRemoveFilesFromNonExistentBucket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RemoveFileTest" class="method navigator-link" hash-for-method="testRemoveNonExistentFiles">testRemoveNonExistentFiles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncFromInvalidSource(non-existent-folder/, gs://my-gcould-testing-bucket/, true, Did not find existing container at:)">testSyncFromInvalidSource(non-existent-folder/, gs://my-gcould-testing-bucket/, true, Did not find existing container at:)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncFromInvalidSource(local-folder/, gs://invalid-bucket/, true, not exist)">testSyncFromInvalidSource(local-folder/, gs://invalid-bucket/, true, not exist)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncFromInvalidSource(gs://non-existent-bucket/, local-folder/, false, not exist)">testSyncFromInvalidSource(gs://non-existent-bucket/, local-folder/, false, not exist)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [--preserve-metadata])">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [--preserve-metadata])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [-r])">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [-r])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, special-chars-#&amp;@!-folder/, null)">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, special-chars-#&@!-folder/, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-empty-folder/, null)">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-empty-folder/, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, null)">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, null)">testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [--preserve-metadata])">testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [--preserve-metadata])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GCloudStorageTests" title="tests.RsyncTest" class="method navigator-link" hash-for-method="testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [-r])">testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [-r])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GCloudStorageTests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GCloudStorageTests" class="panel GCloudStorageTests">
+          <div class="suite-GCloudStorageTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CopyFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyFile(special@file(name).txt, gs://my-gcould-testing-bucket/copied-file3.txt)">
+                  </a> <!-- testCopyFile(special@file(name).txt, gs://my-gcould-testing-bucket/copied-file3.txt) -->
+                  <span class="method-name">testCopyFile</span>
+                  <span class="parameters">(special@file(name).txt,gs://my-gcould-testing-bucket/copied-file3.txt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyFile(local-file.txt, gs://my-gcould-testing-bucket/copied-file1.txt)">
+                  </a> <!-- testCopyFile(local-file.txt, gs://my-gcould-testing-bucket/copied-file1.txt) -->
+                  <span class="method-name">testCopyFile</span>
+                  <span class="parameters">(local-file.txt,gs://my-gcould-testing-bucket/copied-file1.txt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyFile(*.txt, gs://my-gcould-testing-bucket/)">
+                  </a> <!-- testCopyFile(*.txt, gs://my-gcould-testing-bucket/) -->
+                  <span class="method-name">testCopyFile</span>
+                  <span class="parameters">(*.txt,gs://my-gcould-testing-bucket/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyFile(large-file.zip, gs://my-gcould-testing-bucket/copied-file2.zip)">
+                  </a> <!-- testCopyFile(large-file.zip, gs://my-gcould-testing-bucket/copied-file2.zip) -->
+                  <span class="method-name">testCopyFile</span>
+                  <span class="parameters">(large-file.zip,gs://my-gcould-testing-bucket/copied-file2.zip)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyFile(empty-file.txt, gs://my-gcould-testing-bucket/copied-file4.txt)">
+                  </a> <!-- testCopyFile(empty-file.txt, gs://my-gcould-testing-bucket/copied-file4.txt) -->
+                  <span class="method-name">testCopyFile</span>
+                  <span class="parameters">(empty-file.txt,gs://my-gcould-testing-bucket/copied-file4.txt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyFromInvalidLocalPath">
+                  </a> <!-- testCopyFromInvalidLocalPath -->
+                  <span class="method-name">testCopyFromInvalidLocalPath</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyNonExistentFile">
+                  </a> <!-- testCopyNonExistentFile -->
+                  <span class="method-name">testCopyNonExistentFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCopyToInvalidGCSPath">
+                  </a> <!-- testCopyToInvalidGCSPath -->
+                  <span class="method-name">testCopyToInvalidGCSPath</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GCloudStorageTests-class-passed -->
+          <div class="suite-GCloudStorageTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RemoveFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFiles([gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-f...)">
+                  </a> <!-- testRemoveFiles([gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-f...) -->
+                  <span class="method-name">testRemoveFiles</span>
+                  <span class="parameters">([gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-file1.zip])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFiles([gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt])">
+                  </a> <!-- testRemoveFiles([gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt]) -->
+                  <span class="method-name">testRemoveFiles</span>
+                  <span class="parameters">([gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFiles([gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/remo...)">
+                  </a> <!-- testRemoveFiles([gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/remo...) -->
+                  <span class="method-name">testRemoveFiles</span>
+                  <span class="parameters">([gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/removed-nested2.txt])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFiles([gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt])">
+                  </a> <!-- testRemoveFiles([gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt]) -->
+                  <span class="method-name">testRemoveFiles</span>
+                  <span class="parameters">([gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFiles([gs://my-gcould-testing-bucket/removed-empty-file.txt])">
+                  </a> <!-- testRemoveFiles([gs://my-gcould-testing-bucket/removed-empty-file.txt]) -->
+                  <span class="method-name">testRemoveFiles</span>
+                  <span class="parameters">([gs://my-gcould-testing-bucket/removed-empty-file.txt])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFilesFromNonExistentBucket">
+                  </a> <!-- testRemoveFilesFromNonExistentBucket -->
+                  <span class="method-name">testRemoveFilesFromNonExistentBucket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveNonExistentFiles">
+                  </a> <!-- testRemoveNonExistentFiles -->
+                  <span class="method-name">testRemoveNonExistentFiles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GCloudStorageTests-class-passed -->
+          <div class="suite-GCloudStorageTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RsyncTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncFromInvalidSource(non-existent-folder/, gs://my-gcould-testing-bucket/, true, Did not find existing container at:)">
+                  </a> <!-- testSyncFromInvalidSource(non-existent-folder/, gs://my-gcould-testing-bucket/, true, Did not find existing container at:) -->
+                  <span class="method-name">testSyncFromInvalidSource</span>
+                  <span class="parameters">(non-existent-folder/,gs://my-gcould-testing-bucket/,true,Did not find existing container at:)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncFromInvalidSource(local-folder/, gs://invalid-bucket/, true, not exist)">
+                  </a> <!-- testSyncFromInvalidSource(local-folder/, gs://invalid-bucket/, true, not exist) -->
+                  <span class="method-name">testSyncFromInvalidSource</span>
+                  <span class="parameters">(local-folder/,gs://invalid-bucket/,true,not exist)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncFromInvalidSource(gs://non-existent-bucket/, local-folder/, false, not exist)">
+                  </a> <!-- testSyncFromInvalidSource(gs://non-existent-bucket/, local-folder/, false, not exist) -->
+                  <span class="method-name">testSyncFromInvalidSource</span>
+                  <span class="parameters">(gs://non-existent-bucket/,local-folder/,false,not exist)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [--preserve-metadata])">
+                  </a> <!-- testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [-preserve-metadata]) -->
+                  <span class="method-name">testSyncGCSToLocal</span>
+                  <span class="parameters">(gs://my-gcould-testing-bucket/,local-folder-dest/,[--preserve-metadata])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [-r])">
+                  </a> <!-- testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [-r]) -->
+                  <span class="method-name">testSyncGCSToLocal</span>
+                  <span class="parameters">(gs://my-gcould-testing-bucket/,local-folder-dest/,[-r])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, special-chars-#&amp;@!-folder/, null)">
+                  </a> <!-- testSyncGCSToLocal(gs://my-gcould-testing-bucket/, special-chars-#&@!-folder/, null) -->
+                  <span class="method-name">testSyncGCSToLocal</span>
+                  <span class="parameters">(gs://my-gcould-testing-bucket/,special-chars-#&@!-folder/,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-empty-folder/, null)">
+                  </a> <!-- testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-empty-folder/, null) -->
+                  <span class="method-name">testSyncGCSToLocal</span>
+                  <span class="parameters">(gs://my-gcould-testing-bucket/,local-empty-folder/,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, null)">
+                  </a> <!-- testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, null) -->
+                  <span class="method-name">testSyncGCSToLocal</span>
+                  <span class="parameters">(gs://my-gcould-testing-bucket/,local-folder-dest/,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, null)">
+                  </a> <!-- testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, null) -->
+                  <span class="method-name">testSyncLocalToGCS</span>
+                  <span class="parameters">(local-folder/,gs://my-gcould-testing-bucket/,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [--preserve-metadata])">
+                  </a> <!-- testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [-preserve-metadata]) -->
+                  <span class="method-name">testSyncLocalToGCS</span>
+                  <span class="parameters">(local-folder/,gs://my-gcould-testing-bucket/,[--preserve-metadata])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [-r])">
+                  </a> <!-- testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [-r]) -->
+                  <span class="method-name">testSyncLocalToGCS</span>
+                  <span class="parameters">(local-folder/,gs://my-gcould-testing-bucket/,[-r])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GCloudStorageTests-class-passed -->
+        </div> <!-- panel GCloudStorageTests -->
+        <div panel-name="test-xml-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Puffy\google-storage-test\src\test\java\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;GCloudStorageTests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;framework.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Google Cloud Storage Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CopyFileTest&quot;/&gt;
+      &lt;class name=&quot;tests.RemoveFileTest&quot;/&gt;
+      &lt;class name=&quot;tests.RsyncTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Google Cloud Storage Tests --&gt;
+&lt;/suite&gt; &lt;!-- GCloudStorageTests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GCloudStorageTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Google Cloud Storage Tests (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GCloudStorageTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GCloudStorageTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GCloudStorageTests');
+function tableData_GCloudStorageTests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(26);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSyncGCSToLocal')
+data.setCell(0, 2, 'tests.RsyncTest')
+data.setCell(0, 3, 20498);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSyncGCSToLocal')
+data.setCell(1, 2, 'tests.RsyncTest')
+data.setCell(1, 3, 19676);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSyncLocalToGCS')
+data.setCell(2, 2, 'tests.RsyncTest')
+data.setCell(2, 3, 18103);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSyncGCSToLocal')
+data.setCell(3, 2, 'tests.RsyncTest')
+data.setCell(3, 3, 17493);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSyncGCSToLocal')
+data.setCell(4, 2, 'tests.RsyncTest')
+data.setCell(4, 3, 17328);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSyncGCSToLocal')
+data.setCell(5, 2, 'tests.RsyncTest')
+data.setCell(5, 3, 17095);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSyncLocalToGCS')
+data.setCell(6, 2, 'tests.RsyncTest')
+data.setCell(6, 3, 16611);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSyncLocalToGCS')
+data.setCell(7, 2, 'tests.RsyncTest')
+data.setCell(7, 3, 15203);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCopyFile')
+data.setCell(8, 2, 'tests.CopyFileTest')
+data.setCell(8, 3, 14405);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRemoveFiles')
+data.setCell(9, 2, 'tests.RemoveFileTest')
+data.setCell(9, 3, 14236);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testRemoveFiles')
+data.setCell(10, 2, 'tests.RemoveFileTest')
+data.setCell(10, 3, 13349);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testRemoveFiles')
+data.setCell(11, 2, 'tests.RemoveFileTest')
+data.setCell(11, 3, 12466);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testRemoveFiles')
+data.setCell(12, 2, 'tests.RemoveFileTest')
+data.setCell(12, 3, 12266);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCopyFile')
+data.setCell(13, 2, 'tests.CopyFileTest')
+data.setCell(13, 3, 9798);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testCopyFile')
+data.setCell(14, 2, 'tests.CopyFileTest')
+data.setCell(14, 3, 9566);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCopyFile')
+data.setCell(15, 2, 'tests.CopyFileTest')
+data.setCell(15, 3, 9310);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCopyFromInvalidLocalPath')
+data.setCell(16, 2, 'tests.CopyFileTest')
+data.setCell(16, 3, 8905);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testCopyToInvalidGCSPath')
+data.setCell(17, 2, 'tests.CopyFileTest')
+data.setCell(17, 3, 8663);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testCopyNonExistentFile')
+data.setCell(18, 2, 'tests.CopyFileTest')
+data.setCell(18, 3, 8654);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testCopyFile')
+data.setCell(19, 2, 'tests.CopyFileTest')
+data.setCell(19, 3, 6268);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testRemoveFiles')
+data.setCell(20, 2, 'tests.RemoveFileTest')
+data.setCell(20, 3, 5531);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testRemoveNonExistentFiles')
+data.setCell(21, 2, 'tests.RemoveFileTest')
+data.setCell(21, 3, 5263);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testRemoveFilesFromNonExistentBucket')
+data.setCell(22, 2, 'tests.RemoveFileTest')
+data.setCell(22, 3, 4768);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testSyncFromInvalidSource')
+data.setCell(23, 2, 'tests.RsyncTest')
+data.setCell(23, 3, 2240);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testSyncFromInvalidSource')
+data.setCell(24, 2, 'tests.RsyncTest')
+data.setCell(24, 3, 2202);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testSyncFromInvalidSource')
+data.setCell(25, 2, 'tests.RsyncTest')
+data.setCell(25, 3, 2007);
+window.suiteTableData['GCloudStorageTests']= { tableData: data, tableDiv: 'times-div-GCloudStorageTests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-GCloudStorageTests">
+              </div> <!-- times-div-GCloudStorageTests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GCloudStorageTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GCloudStorageTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">uploadTestFiles</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncFromInvalidSource(non-existent-folder/, gs://my-gcould-testing-bucket/, true, Did not find existing container at:)</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCopyFile(local-file.txt, gs://my-gcould-testing-bucket/copied-file1.txt)</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncFromInvalidSource(gs://non-existent-bucket/, local-folder/, false, not exist)</span>
+                <span class="method-start">2058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSyncFromInvalidSource(local-folder/, gs://invalid-bucket/, true, not exist)</span>
+                <span class="method-start">4299 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCopyFile(large-file.zip, gs://my-gcould-testing-bucket/copied-file2.zip)</span>
+                <span class="method-start">6319 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, null)</span>
+                <span class="method-start">6502 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCopyFile(*.txt, gs://my-gcould-testing-bucket/)</span>
+                <span class="method-start">15886 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [-r])</span>
+                <span class="method-start">27001 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCopyFile(special@file(name).txt, gs://my-gcould-testing-bucket/copied-file3.txt)</span>
+                <span class="method-start">30292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCopyFile(empty-file.txt, gs://my-gcould-testing-bucket/copied-file4.txt)</span>
+                <span class="method-start">39602 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-folder-dest/, [--preserve-metadata])</span>
+                <span class="method-start">46678 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCopyFromInvalidLocalPath</span>
+                <span class="method-start">49401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCopyNonExistentFile</span>
+                <span class="method-start">58307 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, local-empty-folder/, null)</span>
+                <span class="method-start">64171 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CopyFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCopyToInvalidGCSPath</span>
+                <span class="method-start">66961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75626 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncGCSToLocal(gs://my-gcould-testing-bucket/, special-chars-#&@!-folder/, null)</span>
+                <span class="method-start">81500 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFiles([gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt])</span>
+                <span class="method-start">90665 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, null)</span>
+                <span class="method-start">98597 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFiles([gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/remo...)</span>
+                <span class="method-start">104015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFiles([gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-f...)</span>
+                <span class="method-start">116481 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [-r])</span>
+                <span class="method-start">116701 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFiles([gs://my-gcould-testing-bucket/removed-empty-file.txt])</span>
+                <span class="method-start">130718 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSyncLocalToGCS(local-folder/, gs://my-gcould-testing-bucket/, [--preserve-metadata])</span>
+                <span class="method-start">133313 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFiles([gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt])</span>
+                <span class="method-start">136250 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RsyncTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">148516 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFilesFromNonExistentBucket</span>
+                <span class="method-start">148517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemoveNonExistentFiles</span>
+                <span class="method-start">153286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">158549 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

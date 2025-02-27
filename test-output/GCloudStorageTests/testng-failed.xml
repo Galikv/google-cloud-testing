@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [GCloudStorageTests]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="framework.TestListener"/>
+  </listeners>
+  <test thread-count="3" parallel="classes" name="Google Cloud Storage Tests(failed)">
+    <classes>
+      <class name="tests.RsyncTest">
+        <methods>
+          <include name="testSyncGCSToLocal" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.RsyncTest -->
+    </classes>
+  </test> <!-- Google Cloud Storage Tests(failed) -->
+</suite> <!-- Failed suite [GCloudStorageTests] -->

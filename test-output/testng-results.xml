@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-26T17:55:49 IST" name="GCloudStorageTests" finished-at="2025-02-26T17:58:27 IST" duration-ms="158577">
+    <groups>
+    </groups>
+    <test started-at="2025-02-26T17:55:49 IST" name="Google Cloud Storage Tests" finished-at="2025-02-26T17:58:27 IST" duration-ms="158577">
+      <class name="tests.CopyFileTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:55:49 IST" name="setUp" finished-at="2025-02-26T17:55:49 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCopyFile(java.lang.String,java.lang.String)[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:55:49 IST" name="testCopyFile" data-provider="copyFileTestData" finished-at="2025-02-26T17:55:55 IST" duration-ms="6268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local-file.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/copied-file1.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyFile -->
+        <test-method signature="testCopyFile(java.lang.String,java.lang.String)[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:55:55 IST" name="testCopyFile" data-provider="copyFileTestData" finished-at="2025-02-26T17:56:05 IST" duration-ms="9566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[large-file.zip]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/copied-file2.zip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyFile -->
+        <test-method signature="testCopyFile(java.lang.String,java.lang.String)[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:56:05 IST" name="testCopyFile" data-provider="copyFileTestData" finished-at="2025-02-26T17:56:19 IST" duration-ms="14405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[*.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyFile -->
+        <test-method signature="testCopyFile(java.lang.String,java.lang.String)[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:56:19 IST" name="testCopyFile" data-provider="copyFileTestData" finished-at="2025-02-26T17:56:28 IST" duration-ms="9310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[special@file(name).txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/copied-file3.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyFile -->
+        <test-method signature="testCopyFile(java.lang.String,java.lang.String)[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:56:28 IST" name="testCopyFile" data-provider="copyFileTestData" finished-at="2025-02-26T17:56:38 IST" duration-ms="9798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[empty-file.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/copied-file4.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyFile -->
+        <test-method signature="testCopyFromInvalidLocalPath()[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:56:38 IST" name="testCopyFromInvalidLocalPath" finished-at="2025-02-26T17:56:47 IST" duration-ms="8905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyFromInvalidLocalPath -->
+        <test-method signature="testCopyNonExistentFile()[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:56:47 IST" name="testCopyNonExistentFile" finished-at="2025-02-26T17:56:56 IST" duration-ms="8654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyNonExistentFile -->
+        <test-method signature="testCopyToInvalidGCSPath()[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:56:56 IST" name="testCopyToInvalidGCSPath" finished-at="2025-02-26T17:57:04 IST" duration-ms="8663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCopyToInvalidGCSPath -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CopyFileTest@1a245833]" started-at="2025-02-26T17:57:04 IST" name="tearDown" finished-at="2025-02-26T17:57:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CopyFileTest -->
+      <class name="tests.RemoveFileTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:55:49 IST" name="setUp" finished-at="2025-02-26T17:55:49 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="uploadTestFiles()[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:55:49 IST" name="uploadTestFiles" finished-at="2025-02-26T17:57:19 IST" duration-ms="90646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadTestFiles -->
+        <test-method signature="testRemoveFiles(java.util.List)[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:57:19 IST" name="testRemoveFiles" data-provider="removeFilesTestData" finished-at="2025-02-26T17:57:33 IST" duration-ms="13349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFiles -->
+        <test-method signature="testRemoveFiles(java.util.List)[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:57:33 IST" name="testRemoveFiles" data-provider="removeFilesTestData" finished-at="2025-02-26T17:57:45 IST" duration-ms="12466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/removed-nested2.txt]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFiles -->
+        <test-method signature="testRemoveFiles(java.util.List)[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:57:45 IST" name="testRemoveFiles" data-provider="removeFilesTestData" finished-at="2025-02-26T17:57:59 IST" duration-ms="14236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-file1.zip]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFiles -->
+        <test-method signature="testRemoveFiles(java.util.List)[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:57:59 IST" name="testRemoveFiles" data-provider="removeFilesTestData" finished-at="2025-02-26T17:58:05 IST" duration-ms="5531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[gs://my-gcould-testing-bucket/removed-empty-file.txt]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFiles -->
+        <test-method signature="testRemoveFiles(java.util.List)[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:58:05 IST" name="testRemoveFiles" data-provider="removeFilesTestData" finished-at="2025-02-26T17:58:17 IST" duration-ms="12266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFiles -->
+        <test-method signature="testRemoveFilesFromNonExistentBucket()[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:58:17 IST" name="testRemoveFilesFromNonExistentBucket" finished-at="2025-02-26T17:58:22 IST" duration-ms="4768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFilesFromNonExistentBucket -->
+        <test-method signature="testRemoveNonExistentFiles()[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:58:22 IST" name="testRemoveNonExistentFiles" finished-at="2025-02-26T17:58:27 IST" duration-ms="5263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveNonExistentFiles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RemoveFileTest@25df00a0]" started-at="2025-02-26T17:58:27 IST" name="tearDown" finished-at="2025-02-26T17:58:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RemoveFileTest -->
+      <class name="tests.RsyncTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:55:49 IST" name="setUp" finished-at="2025-02-26T17:55:49 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSyncFromInvalidSource(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:55:49 IST" name="testSyncFromInvalidSource" data-provider="syncFailureData" finished-at="2025-02-26T17:55:51 IST" duration-ms="2007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[non-existent-folder/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Did not find existing container at:]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncFromInvalidSource -->
+        <test-method signature="testSyncFromInvalidSource(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:55:51 IST" name="testSyncFromInvalidSource" data-provider="syncFailureData" finished-at="2025-02-26T17:55:53 IST" duration-ms="2240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gs://non-existent-bucket/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local-folder/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[not exist]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncFromInvalidSource -->
+        <test-method signature="testSyncFromInvalidSource(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:55:53 IST" name="testSyncFromInvalidSource" data-provider="syncFailureData" finished-at="2025-02-26T17:55:55 IST" duration-ms="2202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local-folder/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://invalid-bucket/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[not exist]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncFromInvalidSource -->
+        <test-method signature="testSyncGCSToLocal(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:55:55 IST" name="testSyncGCSToLocal" data-provider="syncGCSToLocalData" finished-at="2025-02-26T17:56:16 IST" duration-ms="20498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local-folder-dest/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncGCSToLocal -->
+        <test-method signature="testSyncGCSToLocal(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:56:16 IST" name="testSyncGCSToLocal" data-provider="syncGCSToLocalData" finished-at="2025-02-26T17:56:35 IST" duration-ms="19676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local-folder-dest/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7a3793c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncGCSToLocal -->
+        <test-method signature="testSyncGCSToLocal(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:56:35 IST" name="testSyncGCSToLocal" data-provider="syncGCSToLocalData" finished-at="2025-02-26T17:56:53 IST" duration-ms="17493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local-folder-dest/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1b266842]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncGCSToLocal -->
+        <test-method signature="testSyncGCSToLocal(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:56:53 IST" name="testSyncGCSToLocal" data-provider="syncGCSToLocalData" finished-at="2025-02-26T17:57:10 IST" duration-ms="17328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local-empty-folder/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncGCSToLocal -->
+        <test-method signature="testSyncGCSToLocal(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:57:10 IST" name="testSyncGCSToLocal" data-provider="syncGCSToLocalData" finished-at="2025-02-26T17:57:27 IST" duration-ms="17095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[special-chars-#&@!-folder/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncGCSToLocal -->
+        <test-method signature="testSyncLocalToGCS(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:57:27 IST" name="testSyncLocalToGCS" data-provider="syncLocalToGCSData" finished-at="2025-02-26T17:57:45 IST" duration-ms="18103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local-folder/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncLocalToGCS -->
+        <test-method signature="testSyncLocalToGCS(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:57:45 IST" name="testSyncLocalToGCS" data-provider="syncLocalToGCSData" finished-at="2025-02-26T17:58:02 IST" duration-ms="16611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local-folder/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@651aed93]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncLocalToGCS -->
+        <test-method signature="testSyncLocalToGCS(java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:58:02 IST" name="testSyncLocalToGCS" data-provider="syncLocalToGCSData" finished-at="2025-02-26T17:58:17 IST" duration-ms="15203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local-folder/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gs://my-gcould-testing-bucket/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@42b3b079]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSyncLocalToGCS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RsyncTest@16150369]" started-at="2025-02-26T17:58:17 IST" name="tearDown" finished-at="2025-02-26T17:58:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RsyncTest -->
+    </test> <!-- Google Cloud Storage Tests -->
+  </suite> <!-- GCloudStorageTests -->
+</testng-results>

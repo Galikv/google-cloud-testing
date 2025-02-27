@@ -1,0 +1,108 @@
+Feb 26, 2025 4:34:20 PM framework.TestListener onStart
+INFO: === Starting Test Suite: Google Cloud Storage Tests ===
+Feb 26, 2025 4:34:20 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncFromInvalidSource
+Feb 26, 2025 4:34:20 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyFile
+Feb 26, 2025 4:34:22 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncFromInvalidSource
+Feb 26, 2025 4:34:22 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncFromInvalidSource
+Feb 26, 2025 4:34:24 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncFromInvalidSource
+Feb 26, 2025 4:34:24 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncFromInvalidSource
+Feb 26, 2025 4:34:26 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyFile
+Feb 26, 2025 4:34:26 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyFile
+Feb 26, 2025 4:34:26 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncFromInvalidSource
+Feb 26, 2025 4:34:26 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncGCSToLocal
+Feb 26, 2025 4:34:36 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyFile
+Feb 26, 2025 4:34:36 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyFile
+Feb 26, 2025 4:34:45 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncGCSToLocal
+Feb 26, 2025 4:34:45 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncGCSToLocal
+Feb 26, 2025 4:34:51 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyFile
+Feb 26, 2025 4:34:51 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyFile
+Feb 26, 2025 4:35:01 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyFile
+Feb 26, 2025 4:35:01 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyFile
+Feb 26, 2025 4:35:08 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncGCSToLocal
+Feb 26, 2025 4:35:08 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncGCSToLocal
+Feb 26, 2025 4:35:11 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyFile
+Feb 26, 2025 4:35:11 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyFromInvalidLocalPath
+Feb 26, 2025 4:35:21 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyFromInvalidLocalPath
+Feb 26, 2025 4:35:21 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyNonExistentFile
+Feb 26, 2025 4:35:25 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncGCSToLocal
+Feb 26, 2025 4:35:25 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncGCSToLocal
+Feb 26, 2025 4:35:29 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyNonExistentFile
+Feb 26, 2025 4:35:29 PM framework.TestListener onTestStart
+INFO: [TEST START] testCopyToInvalidGCSPath
+Feb 26, 2025 4:35:38 PM framework.TestListener onTestSuccess
+INFO: [PASS] testCopyToInvalidGCSPath
+Feb 26, 2025 4:35:43 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncGCSToLocal
+Feb 26, 2025 4:35:43 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncGCSToLocal
+Feb 26, 2025 4:35:53 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveFiles
+Feb 26, 2025 4:36:00 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncGCSToLocal
+Feb 26, 2025 4:36:00 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncLocalToGCS
+Feb 26, 2025 4:36:06 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveFiles
+Feb 26, 2025 4:36:06 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveFiles
+Feb 26, 2025 4:36:20 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncLocalToGCS
+Feb 26, 2025 4:36:20 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveFiles
+Feb 26, 2025 4:36:20 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncLocalToGCS
+Feb 26, 2025 4:36:20 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveFiles
+Feb 26, 2025 4:36:35 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveFiles
+Feb 26, 2025 4:36:35 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveFiles
+Feb 26, 2025 4:36:37 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncLocalToGCS
+Feb 26, 2025 4:36:37 PM framework.TestListener onTestStart
+INFO: [TEST START] testSyncLocalToGCS
+Feb 26, 2025 4:36:40 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveFiles
+Feb 26, 2025 4:36:40 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveFiles
+Feb 26, 2025 4:36:53 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveFiles
+Feb 26, 2025 4:36:53 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveFilesFromNonExistentBucket
+Feb 26, 2025 4:36:53 PM framework.TestListener onTestSuccess
+INFO: [PASS] testSyncLocalToGCS
+Feb 26, 2025 4:36:58 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveFilesFromNonExistentBucket
+Feb 26, 2025 4:36:58 PM framework.TestListener onTestStart
+INFO: [TEST START] testRemoveNonExistentFiles
+Feb 26, 2025 4:37:04 PM framework.TestListener onTestSuccess
+INFO: [PASS] testRemoveNonExistentFiles
+Feb 26, 2025 4:37:04 PM framework.TestListener onFinish
+INFO: === Finished Test Suite: Google Cloud Storage Tests ===

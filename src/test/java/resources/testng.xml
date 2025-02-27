@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GCloudStorageTests" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="framework.TestListener"/>
+    </listeners>
+    <test name="Google Cloud Storage Tests">
+        <classes>
+            <class name="tests.SignUrlTest"/>
+              <class name="tests.CopyFileTest"/>
+              <class name="tests.RemoveFileTest"/>
+              <class name="tests.RsyncTest"/>
+          </classes>
+      </test>
+  </suite>

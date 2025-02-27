@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>TestNG:  Google Cloud Storage Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Google Cloud Storage Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 26 17:55:49 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>158 seconds (158577 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.RsyncTest.testSyncGCSToLocal()'><b>testSyncGCSToLocal</b><br>Test class: tests.RsyncTest<br>Parameters: gs://my-gcould-testing-bucket/, local-folder-dest/, [Ljava.lang.String;@1b266842</td>
+<td></td>
+<td>17</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveFiles()'><b>testRemoveFiles</b><br>Test class: tests.RemoveFileTest<br>Parameters: [gs://my-gcould-testing-bucket/removed-large-file.zip, gs://my-gcould-testing-bucket/removed-large-file1.zip]</td>
+<td></td>
+<td>14</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyFile()'><b>testCopyFile</b><br>Test class: tests.CopyFileTest<br>Parameters: special@file(name).txt, gs://my-gcould-testing-bucket/copied-file3.txt</td>
+<td></td>
+<td>9</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncFromInvalidSource()'><b>testSyncFromInvalidSource</b><br>Test class: tests.RsyncTest<br>Parameters: non-existent-folder/, gs://my-gcould-testing-bucket/, true, Did not find existing container at:</td>
+<td></td>
+<td>2</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveFiles()'><b>testRemoveFiles</b><br>Test class: tests.RemoveFileTest<br>Parameters: [gs://my-gcould-testing-bucket/removed-file3.txt, gs://cross-bucket/removed-cross-file1.txt]</td>
+<td></td>
+<td>12</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveFiles()'><b>testRemoveFiles</b><br>Test class: tests.RemoveFileTest<br>Parameters: [gs://my-gcould-testing-bucket/folder/removed-nested1.txt, gs://my-gcould-testing-bucket/folder/removed-nested2.txt]</td>
+<td></td>
+<td>12</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncGCSToLocal()'><b>testSyncGCSToLocal</b><br>Test class: tests.RsyncTest<br>Parameters: gs://my-gcould-testing-bucket/, local-folder-dest/, [Ljava.lang.String;@7a3793c7</td>
+<td></td>
+<td>19</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveFilesFromNonExistentBucket()'><b>testRemoveFilesFromNonExistentBucket</b><br>Test class: tests.RemoveFileTest</td>
+<td></td>
+<td>4</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncLocalToGCS()'><b>testSyncLocalToGCS</b><br>Test class: tests.RsyncTest<br>Parameters: local-folder/, gs://my-gcould-testing-bucket/, null</td>
+<td></td>
+<td>18</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncFromInvalidSource()'><b>testSyncFromInvalidSource</b><br>Test class: tests.RsyncTest<br>Parameters: local-folder/, gs://invalid-bucket/, true, not exist</td>
+<td></td>
+<td>2</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveNonExistentFiles()'><b>testRemoveNonExistentFiles</b><br>Test class: tests.RemoveFileTest</td>
+<td></td>
+<td>5</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncGCSToLocal()'><b>testSyncGCSToLocal</b><br>Test class: tests.RsyncTest<br>Parameters: gs://my-gcould-testing-bucket/, special-chars-#&@!-folder/, null</td>
+<td></td>
+<td>17</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncLocalToGCS()'><b>testSyncLocalToGCS</b><br>Test class: tests.RsyncTest<br>Parameters: local-folder/, gs://my-gcould-testing-bucket/, [Ljava.lang.String;@42b3b079</td>
+<td></td>
+<td>15</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncGCSToLocal()'><b>testSyncGCSToLocal</b><br>Test class: tests.RsyncTest<br>Parameters: gs://my-gcould-testing-bucket/, local-empty-folder/, null</td>
+<td></td>
+<td>17</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncFromInvalidSource()'><b>testSyncFromInvalidSource</b><br>Test class: tests.RsyncTest<br>Parameters: gs://non-existent-bucket/, local-folder/, false, not exist</td>
+<td></td>
+<td>2</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyNonExistentFile()'><b>testCopyNonExistentFile</b><br>Test class: tests.CopyFileTest</td>
+<td></td>
+<td>8</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveFiles()'><b>testRemoveFiles</b><br>Test class: tests.RemoveFileTest<br>Parameters: [gs://my-gcould-testing-bucket/removed-file1.txt, gs://my-gcould-testing-bucket/removed-file2.txt]</td>
+<td></td>
+<td>13</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyFile()'><b>testCopyFile</b><br>Test class: tests.CopyFileTest<br>Parameters: local-file.txt, gs://my-gcould-testing-bucket/copied-file1.txt</td>
+<td></td>
+<td>6</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyToInvalidGCSPath()'><b>testCopyToInvalidGCSPath</b><br>Test class: tests.CopyFileTest</td>
+<td></td>
+<td>8</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyFile()'><b>testCopyFile</b><br>Test class: tests.CopyFileTest<br>Parameters: *.txt, gs://my-gcould-testing-bucket/</td>
+<td></td>
+<td>14</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyFromInvalidLocalPath()'><b>testCopyFromInvalidLocalPath</b><br>Test class: tests.CopyFileTest</td>
+<td></td>
+<td>8</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncGCSToLocal()'><b>testSyncGCSToLocal</b><br>Test class: tests.RsyncTest<br>Parameters: gs://my-gcould-testing-bucket/, local-folder-dest/, null</td>
+<td></td>
+<td>20</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.RemoveFileTest.testRemoveFiles()'><b>testRemoveFiles</b><br>Test class: tests.RemoveFileTest<br>Parameters: [gs://my-gcould-testing-bucket/removed-empty-file.txt]</td>
+<td></td>
+<td>5</td>
+<td>tests.RemoveFileTest@25df00a0</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyFile()'><b>testCopyFile</b><br>Test class: tests.CopyFileTest<br>Parameters: large-file.zip, gs://my-gcould-testing-bucket/copied-file2.zip</td>
+<td></td>
+<td>9</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+<tr>
+<td title='tests.RsyncTest.testSyncLocalToGCS()'><b>testSyncLocalToGCS</b><br>Test class: tests.RsyncTest<br>Parameters: local-folder/, gs://my-gcould-testing-bucket/, [Ljava.lang.String;@651aed93</td>
+<td></td>
+<td>16</td>
+<td>tests.RsyncTest@16150369</td></tr>
+<tr>
+<td title='tests.CopyFileTest.testCopyFile()'><b>testCopyFile</b><br>Test class: tests.CopyFileTest<br>Parameters: empty-file.txt, gs://my-gcould-testing-bucket/copied-file4.txt</td>
+<td></td>
+<td>9</td>
+<td>tests.CopyFileTest@1a245833</td></tr>
+</table><p>
+</body>
+</html>
